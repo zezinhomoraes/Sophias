@@ -14,13 +14,15 @@
 *{
   margin: 0px;
   padding: 0px;
+  cursor: default;
+  user-select: none;
 }
 body,html{
 
-height: 380vh;
-background-size: 380vh;
-  background-image:linear-gradient(to bottom, #00001f, #00001fe0, #00001fd5);
-  background-repeat: no-repeat;
+height: 2350px;
+background-size: auto;
+background-color: #00001f;
+background-repeat: no-repeat;
  
 }
 
@@ -28,6 +30,7 @@ background-size: 380vh;
 header{
   font-family: prae;
   display: block;
+  
 }
 
 header > h1{
@@ -60,7 +63,7 @@ nav > ul > li{
 }
 
 nav > ul > li > a{
-  
+cursor: pointer;
 color: #daa520;
 text-decoration:none ;
  }
@@ -78,11 +81,13 @@ text-decoration:none ;
 main{
   display: block;
   margin: 100px 20px;
-  height: 100vh
+ 
+  height: auto;
   
 }
 
 main > div > h2{
+  cursor: pointer;
   font-family: grego;
   text-align: center;
 
@@ -93,13 +98,13 @@ main > div > h2{
   margin-top: 30px;
   height: 200px;
   width: 120px;
- 
+
   border-radius: 15px;
   overflow: hidden;
 }
 
 .itens:hover{
-  width: 60vw;
+  width: 90vw;
   transform: scale(1.1);
   transition-duration: 1.05s;
 
@@ -107,9 +112,19 @@ main > div > h2{
 
 main > div > a >img{
   height: 100%;
-  width: 60vw ;
+  width: 90vw ;
   background-position: center center;
   
 }
 
+.titulo{
+  display:none;
+}
 
+footer > P{
+  display: block;
+  background-color: black;
+  text-align: center;
+  font-size: 15px;
+  color: #daa520;
+}
