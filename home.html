@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="media-querry-home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Home - Sophias</title>
+</head>
+<body onresize="reSize()">
+    <header>
+<h1>Sophias</h1>     
+<i id="menu-icon" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+   <nav id="menu">
+<ul>
+ <li><a href="">Mitologias</a></li>
+ <li><a href="">Personagens</a></li>
+ <li><a href="">Lugares</a></li>
+ <li><a href="">Historias</a></li>
+ <li><a href="../Pagina-inicial/pagina-inicial.html">Pagina Inicial</a></li>
+</ul>
+   </nav>
+   </header>
+   
+
+<main>
+
+  <div class="itens"> <h2>Grecia</h2>
+ <a href=""><img src="Imagens/Grecia.jpg"></a>
+  </div>
+  <div class="itens"><h2>Roma</h2>
+  
+  </div>  
+  <div class="itens"><h2>Egito</h2>
+   <a href=""><img src="Imagens/Piramide.jpg"></a>
+  </div>
+  <div class="itens"><h2>India</h2>
+   <a href=""></a>
+  </div>
+  <div class="itens"><h2>Japão</h2>
+   <a href=""></a>
+  </div>
+  <div class="itens"><h2>Nordico</h2>
+   <a href=""><img src="Imagens/Valhalla.jpg"></a>
+  </div>
+  <div class="itens"><h2>Indigina</h2>
+<a href=""></a>
+  </div>
+  <div class="itens"><h2>Hindú</h2>
+   <a href=""></a>
+  </div>
+  <div class="itens"><h2>Africana</h2>
+   <a href=""></a>
+  </div>
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+   <script>
+   function clickMenu(){
+   if(menu.style.display == 'none'){
+   menu.style.display = 'block' 
+   }else{(menu.style.display == 'block')
+   menu.style.display = 'none'
+   }
+   }
+   function reSize(){
+
+      if(window.innerWidth >= 768){
+         nav.style.display = 'block'
+      }else{
+         nav.style.display = 'none'
+      }
+   }
+  
+   </script>
+</body>
+</html>

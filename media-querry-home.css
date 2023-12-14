@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+
+       header{
+        position: relative;
+       }
+    
+        
+        
+       header > h1 {
+        text-align: center;
+       border-bottom: 2px solid#daa520;
+    
+       }
+
+
+       header > i{
+       
+         padding: 0px;
+         width: 29px;
+         margin-top: -50px;
+    
+         position: relative;
+       }
+
+       i#menu-icon{
+        font-size: 30px;
+        background-color: #00000000;
+       }
+       header > nav{
+        margin-top: 0px;
+       }
+        header > nav > ul{
+          border-radius: 10px;
+          width: 130px;
+          text-align: left;
+          padding-right: ;
+        }
+        header > nav > ul > li{
+            font-size: 18px;
+            border-bottom: none;
+             list-style-type: none;
+            margin-left: 15px;
+            margin-top: 15px;
+
+
+        }
+       
+
+        i#menu-icon{
+       
+        }
+       nav#menu{
+        display: block;
+       }
+     
+       main{
+        display: flex ;
+
+       }
+
+}
