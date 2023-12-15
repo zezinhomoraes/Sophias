@@ -1,0 +1,90 @@
+@font-face {
+    font-family: prae;
+    src: url(../Home/Fontes/Praetoria.otf);
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+
+body,html{
+margin: 0px;
+padding: 0px;
+height: 2300px;
+background-size: auto;
+background-color: #00001f;
+background-repeat: no-repeat;
+}
+
+header{
+    position: fixed;
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    
+}
+header > h1{
+    text-align: center;
+    position: fixed;
+    margin-top: 22px;
+    width: 100%;
+    font-family: prae;
+    font-size: 48px;
+    color:#daa520;
+}
+header> i{
+    color:white;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 20px;
+   
+    
+
+}
+i#menu-icon{
+    font-size: 30px;
+    padding: 7px;
+}
+
+nav#menu {
+    display: none;
+ background-color: #eeeeee;
+position: absolute;
+padding: 0px;
+border-radius: 10px;
+overflow: hidden;
+width: 130px;
+
+}
+
+@keyframes deslizarMenu {
+    from{
+     height: 0px;
+    }to{
+        height: 190px;
+    }
+}
+
+nav > ul{
+   animation-name: deslizarMenu;
+   animation-duration: 700ms;
+    text-align:center;
+    display: block;
+    margin: 0px;
+    padding-left: 7px;
+} 
+
+ nav > ul > li{
+list-style-type: none;
+margin-top: 5px;
+margin-bottom: 5px;
+font-size: 18px;
+
+
+
+}
+ nav > ul > li >a{
+    color: #daa520;
+}
+
