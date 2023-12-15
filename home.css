@@ -48,24 +48,50 @@ nav#menu{
   
 }
 nav > ul{
-  
+  animation-name: deslizarMenu;
+  animation-duration: 700ms;
+  animation-timing-function: ease-in-out;
   text-align: center;
   background-color: #eeeeee;
   position: absolute;
   width: 100vw;
+  overflow: hidden;
+}
+@keyframes deslizarMenu {
+  from{
+  height: 0px;
+  }
+  to{
+    height: 145px;
+  }
+  
 }
 
+
 nav > ul > li{
-  
+  animation-name:deslizarLista ;
+  animation-duration: 500ms;
   border-bottom: 1px solid black;
   font-family: grego;
   padding: 5px;
+}
+
+@keyframes deslizarLista {
+  from{
+    height: 0px;
+  }
+  to{
+    height: 18px;
+  }
 }
 
 nav > ul > li > a{
 cursor: pointer;
 color: #daa520;
 text-decoration:none ;
+ }
+ nav > ul > li:hover{
+  transform: scale(1.1);
  }
  
  

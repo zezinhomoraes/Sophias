@@ -10,7 +10,7 @@ height: 2350px;
 
   }
        header{
-        position: sticky;
+        position: static ;
        }
     
         
@@ -94,7 +94,7 @@ height: 2350px;
 
        
        nav#menu{
-        display: block;
+        display: none;
        }
 
        .titulo{ 
