@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+@font-face {
+   font-family: grego;
+   src: url(Fontes/Greco.ttf);
+}
+body{
+   min-height: 100vh;
+}
+header{
+   border-bottom: 2px solid #daa520;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+
+header > h1 {
+  text-align: center;
+  width: 100vw;
+}
+
+i#menu-icon{
+   width:100px;
+   text-align: center;
+   background-color: transparent;
+}
+   i#menu-icon:hover{
+   transform:  scale(1.2);
+   transition-duration: 1200;
+}
+
+@keyframes deslizarmenu {
+   from{ 
+     height: 0px;
+}to{
+     height: 190px;
+    }
+}
+
+nav > ul{
+   animation-name: deslizarmenu ;
+   animation-duration: 700ms;
+   animation-timing-function: ease-out;
+   border-radius: 10px;
+   width: 130px;
+   height: 190px;
+   margin-left: 10px;
+   text-align: center;
+   overflow: hidden;
+}
+
+nav > ul > li{
+   font-size: 18px;
+   border-bottom: none;
+   list-style-type: none;
+   margin: 5px auto;
+ }
+
+nav > ul > li:hover{
+   transform: scale(1.1);
+   transition-duration: 100ms;
+ }
+
+nav#menu{
+   display: none;
+}
+ 
+.titulo{ 
+   font-family: grego;
+   display: block;
+   padding: 40px;
+   color:#daa520;
+   text-align: center;
+   margin-top: 40px ;
+ }
+
+
+.cardMitology{
+   width: 500px;
+   margin: 50px auto;
+   overflow: hidden;
+}
+
+.itens{
+   width: 500px;
+} 
+
+.cardMitology:hover{
+   transform: scale(1.15);
+   transition-duration: 500ms;
+}
+
+.itens a{
+   text-decoration: none;
+   color: black;
+}
+
+.itens img{
+   width: 100%;
+}
+
+
+}

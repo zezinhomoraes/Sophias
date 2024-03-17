@@ -1,0 +1,131 @@
+@font-face{
+    font-family: prae;
+    src: url(Fontes/Praetoria.otf);
+    font-weight: bold;
+}
+@font-face{
+    font-family: grego;
+    src: url(Fontes/Greco.ttf);
+    font-weight: bold;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-size: auto;
+    background-color: #00001f;
+    background-repeat: no-repeat;
+}
+
+header{
+    font-family: prae;
+    text-align: center;
+}
+
+.titulo{
+    padding: 7px;
+    color: #daa520;
+    font-size: 48px;
+    text-shadow: 2px 0.3px black;
+}
+
+i#menu-icon{
+   color: white;
+   background-color: #daa520;
+   opacity: 0.8;
+   display: block;
+   padding: 3px;
+}
+
+nav#menu{
+    display: none;
+}
+
+nav > ul{
+    background-color: #eeeeee;
+    position: absolute;
+    width: 100vw;
+    overflow: hidden;
+    animation-name: deslizarul;
+    animation-duration: 700ms;
+    animation-timing-function: ease-in-out ;
+}
+nav > ul > li{
+    font-family: grego;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    height: 28.6px;
+    animation-name: deslizarli;
+    animation-duration: 500ms;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: #daa520;
+}
+
+@keyframes deslizarul{
+  from{
+    height: 0px;
+  }to{
+    height: 141px;
+  }
+}
+@keyframes deslizarli{
+  from{
+    height: 0px;
+  }to{
+    height: 28.6px;
+  }
+}
+
+.titulo-main{
+    font-family: grego;
+    text-align: center;
+    margin-top: 40px;
+    color: #daa520;
+    
+}
+
+main{
+  margin: 100px 20px;
+}
+.pesquisa{
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #daa520;
+  border-radius: 30px;
+  padding: 7px;
+  
+}
+i#icone{
+  font-size: 20px;
+  color: white;
+}
+input#iPesquisa{
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  color: white;
+  font-size: 15px;
+}
+
+.conteiner{
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  align-items: center;
+}
+
+.conteudo{
+  height: 80px;
+  width: 300px;
+  background-color: #daa520;
+  box-shadow: 0px 0px 5px #daa520;
+  margin: 10px 0px;
+}
