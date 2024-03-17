@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px){
+
+body{
+  min-height: 100vh;
+}
+
+header{
+  border-bottom: 1px solid #daa520; 
+}
+
+i#menu-icon{
+  position: absolute;
+  font-size: 30px;
+  width: 30px;
+  background-color: transparent;
+  margin-left: 20px;
+  margin-top: -50px;
+}
+i#menu-icon:hover{
+  transform: scale(1.2);
+  transition-duration: 1200;
+}
+
+@keyframes deslizarmenu{
+  from{
+    height: 0px;
+  }to{
+    height: 190px;
+  }
+}
+nav > ul{
+  animation-name: deslizarmenu;
+  animation-timing-function: ease-in-out;
+  animation-duration: 700;
+  width: 130px;
+  height: 190px;
+  margin-left: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+nav > ul > li{
+  border-bottom: none;
+  margin: 5px auto;
+}
+
+.pesquisa{
+  max-width: 450px;
+  margin: 0 auto;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+}
