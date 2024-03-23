@@ -96,23 +96,24 @@ main{
 .pesquisa{
   display: flex;
   align-items: center;
+
   border: 1.5px solid #daa520;
   border-radius: 30px;
-  padding: 7px;
+  padding: 10px;
   
 }
 i#icone{
   font-size: 20px;
   color: white;
 }
-input#iPesquisa{
+input{
   border: none;
   padding: 5px;
   background-color: transparent;
-  width: 100%;
+  width: 95%;
   outline: none;
   color: white;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .conteiner{
@@ -128,4 +129,12 @@ input#iPesquisa{
   background-color: #daa520;
   box-shadow: 0px 0px 5px #daa520;
   margin: 10px 0px;
+}
+
+
+/* AREA JAVASCRIPT  */
+
+.nao_pesquisado{
+  display: none;
+
 }
