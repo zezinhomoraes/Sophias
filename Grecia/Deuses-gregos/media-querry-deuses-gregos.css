@@ -27,7 +27,7 @@ i#menu-icon:hover{
   from{
     height: 0px;
   }to{
-    height: 190px;
+    height: 117px;
   }
 }
 nav > ul{
@@ -35,7 +35,7 @@ nav > ul{
   animation-timing-function: ease-in-out;
   animation-duration: 700;
   width: 130px;
-  height: 190px;
+  height: 117px;
   margin-left: 10px;
   border-radius: 15px;
   text-align: center;

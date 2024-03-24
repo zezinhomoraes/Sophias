@@ -50,17 +50,18 @@ nav{
   height: 0px;
   }
   to{
-    height: 141px;
+    height: 85.78px;
   }
   
 }
 
 nav > ul{
   animation-name: deslizarMenu;
-  animation-duration: 700ms;
+  animation-duration: 500ms;
   animation-timing-function: ease-in-out;
+  position:absolute;
+  text-align: center;
   background-color: #eeeeee;
-  position: absolute;
   width: 100vw;
   overflow: hidden;
 }
@@ -85,10 +86,6 @@ nav > ul > li{
   list-style-type: none;
 }
 
- nav > ul > li:hover{
-  transform: scale(1.1);
- }
-
 nav > ul > li > a{
 cursor: pointer;
 color: #daa520;
@@ -98,7 +95,7 @@ text-decoration:none ;
  
  i#menu-icon{
    display: block;
-   
+   cursor: pointer;
    color: white;
    background-color: #daa520;
    padding: 3px;
@@ -150,6 +147,8 @@ main > div > div > h2{
   display: block;
   color: black;
   text-decoration: none;
+  cursor: pointer;
+
 }
 .conteudo:hover{
   transform: scale(1.1);
@@ -174,5 +173,5 @@ footer > P{
 /* ultilização em Javascript */ 
 
 .cardJS{
-  height: 300px !important;
+  height: 310px !important;
 }

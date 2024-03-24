@@ -2,14 +2,15 @@
 
 
 // Evento Click para Abrir Menu
-
-function clickMenu(){
+const abrirMenu = document.getElementById("menu-icon")
+abrirMenu.addEventListener('click', ()=>{
   if(menu.style.display == 'none'){
-    menu.style.display = 'block'
-  }else{(menu.style.display == 'block')
-    menu.style.display = 'none'
-}
-}
+      menu.style.display = 'block'
+    }else{(menu.style.display == 'block')
+      menu.style.display = 'none'
+  }
+})
+
 
 // Evento Click nos Cards
 

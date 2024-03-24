@@ -13,6 +13,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    cursor: default;
+    user-select: none;
 }
 body{
     min-height: 100vh;
@@ -39,6 +41,7 @@ i#menu-icon{
    opacity: 0.8;
    display: block;
    padding: 3px;
+   cursor: pointer;
 }
 
 nav#menu{
@@ -51,12 +54,13 @@ nav > ul{
     width: 100vw;
     overflow: hidden;
     animation-name: deslizarul;
-    animation-duration: 700ms;
+    animation-duration: 500ms;
     animation-timing-function: ease-in-out ;
 }
 nav > ul > li{
     font-family: grego;
     border-bottom: 1px solid black;
+    cursor: pointer;
     padding: 5px;
     height: 28.6px;
     animation-name: deslizarli;
@@ -71,7 +75,7 @@ nav > ul > li > a{
   from{
     height: 0px;
   }to{
-    height: 141px;
+    height: 85.78px;
   }
 }
 @keyframes deslizarli{
@@ -96,7 +100,7 @@ main{
 .pesquisa{
   display: flex;
   align-items: center;
-
+  
   border: 1.5px solid #daa520;
   border-radius: 30px;
   padding: 10px;
@@ -104,9 +108,11 @@ main{
 }
 i#icone{
   font-size: 20px;
+  cursor: pointer;
   color: white;
 }
 input{
+  cursor: text;
   border: none;
   padding: 5px;
   background-color: transparent;
