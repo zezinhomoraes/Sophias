@@ -130,6 +130,7 @@ input{
 }
 
 .conteudo{
+  text-align: center;
   height: 80px;
   width: 300px;
   background-color: #daa520;
